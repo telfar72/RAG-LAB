@@ -1,0 +1,7 @@
+id,title,symptom,root_cause,resolution,category
+1,VPN drops every 30 min,Users disconnected from VPN periodically,IKE phase-2 rekey timeout mismatch,Align phase-2 lifetime on firewall and VPN client,Network
+2,SQL backups failing,Disk full on SQL server and backup jobs fail,Transaction log not truncating in FULL recovery model,Schedule transaction log backups and shrink log once,Database
+3,Outlook slow to open,Outlook profile takes minutes to load,Oversized OST file,Limit cached mode to 12 months and rebuild OST,Endpoint
+4,Users cannot log in,Authentication fails across multiple apps,Domain controller time skew over 5 minutes,Fix NTP source on PDC emulator and resync,Identity
+5,Website returns 502,Load balancer shows backend unhealthy,App pool crashed after memory leak,Recycle app pool and set memory limit recycling,Application
+6,Printer queue stuck,Jobs pile up and never print,Print spooler service hung,Restart spooler and clear C:\Windows\System32\spool\PRINTERS,Endpoint
